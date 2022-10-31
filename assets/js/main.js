@@ -37,14 +37,22 @@ var homeSwiper = new Swiper(".home-swiper", {
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 
 function scrollHeader() {
-  const header = document.getElementById('header')
+  const header = document.getElementById("header");
   // when the scroll is greater than 50 viewport height, add scroll-header to the header tag
-  if(this.scrollY >= 50) header.classList.add('scroll-header');else header.classList.remove('scroll-header')
+  if (this.scrollY >= 50) header.classList.add("scroll-header");
+  else header.classList.remove("scroll-header");
 }
 
-window.addEventListener('scroll', scrollHeader)
+window.addEventListener("scroll", scrollHeader);
 
 /*=============== NEW SWIPER ===============*/
+
+var newSwiper = new Swiper(".new-swiper", {
+  spaceBetween: 16,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  loop: "true",
+});
 
 /*=============== SHOW SCROLL UP ===============*/
 
